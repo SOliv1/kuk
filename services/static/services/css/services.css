@@ -1,0 +1,147 @@
+/* services app and contact forms */
+/*@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900) */
+
+
+/* Brands */
+
+.content-container-brands {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.content-container-brands {
+    padding-top: 65px;
+    padding-bottom: 75px;
+    margin: 35px;
+}
+
+.our_brands .row.h-100 {
+    color: #000;
+    font-family: 'Montserrat';
+}
+
+.logo-font {
+    text-transform: uppercase;
+}
+
+.text-black {
+    color: #000!important;
+}
+
+/* services/about-Page -------------------------------------------------- */
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron h1 {
+    color:#000;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.jumbotron .lead {
+    color: #000;
+    margin: 25px 0;
+}
+
+.jumbotron medium {
+    font-size: 60%;
+    font-style: italic;
+    color: #000; 
+}
+
+
+/* Block dividers */
+
+.block-divider {
+    width: 75px;
+    height: 5px;
+    border: 0;
+    background-color: #444;
+}
+
+
+/* Buttons */
+
+.btn--cta {
+    font-weight: bold;
+    border-radius: 23px;
+    width: 160px;
+}
+
+/*-- Image-backgrounds --*/
+
+.col-md-5 img {
+    width: 100%;
+}
+
+.bg-transparent {
+background-color: transparent;
+} 
+
+/*-- containers --*/
+
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.content-container {
+    padding-top: 65px;
+    padding-bottom: 75px;
+    margin: 35px;
+}
+
+.container-fluid .about-container {
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+
+.container-fluid {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*--- block-divider styles ---*/
+
+.block-divider--bg-black {
+    color: #000;
+}
+
+
+/*--- contact-us ---*/
+
+.overlay-contact {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: -1;
+}
+
+/*--- digital marketing page ---*/
+
+.h3-style .card-digital-marketing  {
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+.card .text-white .bg-primary .mb-3 {
+    max-width: 20rem;
+}
+
+.p-classcard-text-style {
+    border-top-width: 30px;
+    margin-top: 20px;
+    padding-left: 15px;   
+}
+
+.col-7 .my-auto .h4-syle.h4-style   {
+    border-left-width: 30px;
+    padding-left: 30px;
+}
+    
+      

@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'services/css/services.css' %}">
+{% endblock %}
+
+{% block content %}
+
+ <div class="container header-container">
+    <div class="card">
+        <div class="card-body">
+            <div class="row h-100">
+                <div class="card bg-white text-dark">
+                    <img class="card-img" src="https://kuk-milestone-4.s3.amazonaws.com/media/sunshine_22718890_k9hptf7.jpg" alt="Card image">
+                <div class="col-7 col-md-6 my-auto">  
+                    <h4 class="display-4 logo-font text-black main-header.style">
+                        Digital Shine
+                    </h4>
+                </div>
+            </div>
+            <div class="col-7 col-md-6 my-auto">
+                <h2 class="card-text">Shine your marketing business today</h2> 
+                <h3>We want to shine in a fast pace world. Talk to us to find out how we can help
+                </h3>
+                <p class="card-text">We thrive on bringing out the best results for our clients
+                    and positively blaze on the internet, social media and beyond!
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-7 my-auto">
+                    <h4>
+                        Contact us now to see how we can help shine your business!
+                    </h4>
+                </div>
+                <div class="my-5">
+                    <h4>
+                        <a href="/services/services/contact" class="buy-now-button btn btn-lg rounded-0 text-uppercase py-3">Get Quote</a>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+{% endblock %}

@@ -1,0 +1,1 @@
+web: gunicorn kuk_marketing.wsgi:application
