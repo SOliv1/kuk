@@ -3,13 +3,13 @@
 <!-- {% load static %} -->
 {% load static %}
 
-{% block extra_css %}SS
+{% block extra_css %}
 <!-- Bootstrap extra clean-blog for services app -->
-<link rel="stylesheet" href="{ url_for('services/static', filename='services/css/clean-blog.min.css') }" >
-<link rel="stylesheet" href="{ url_for('services/static', filename='services/css/clean-blog.css') }" >
-<link rel="stylesheet" href="{ url_for('services/static', filename='services/css/services.css') }" >
-<link rel="stylesheet" href="{% static 'services/css/services.css' %}">
+  <link rel="stylesheet" href="{ url_for('services/static', filename='services/css/clean-blog.min.css') }" >
+  <link rel="stylesheet" href="{ url_for('services/static', filename='services/css/clean-blog.css') }" >
+  <link rel="stylesheet" href="{% static 'services/css/services.css' %}">
 {% endblock %}
+
 
 {% block extra_js %}
 <!-- Bootstrap extra JavaScript for services app -->
@@ -30,37 +30,43 @@
                 </div>
             </div>    
         </div>  
-        <div class="callout jumbotron text-center, jumbotron-bg">
-        <div class="card" style="width: 85 rem, center;">
-            <h5 class="card-title center">KUK marketing</h5>
-            <p class="card-text center">KUK takes business on line and shine!</p>
-            <p class="lead">Shine your business today!</p>
-        </div>
     
-        <div class="col-7 col-md-6 my-auto">  
-                <h4 class="display-4 logo-font text-black main-header.style">
-                    About Us
-                </h4>
-            </div>
-            <div class = "lead">We are a niche marketing business with the aim of shining in a fast pace world. 
-            </div> 
-                <div>
-                    <p>We thrive on bringing out the best results for our clients
-                    and positively blaze on the internet, social media and beyond!
-                    </p>
-                </div>
-            <div class="row">
-                <div class="col-7 my-auto">
-                    <h4>
-                        Contact us now to discuss how we can help...
-                    </h4>
-                </div>
-                <div class="my-5">
-                    <h4>
-                        <a href="{% url 'contact' %}" class="buy-now-button btn btn-lg rounded-0 text-uppercase py-3">Get a Quote today</a>
-                    </h4>
-                </div>
-            </div>
+        <div class=".col-6. my-auto">  
+            <h4 class="display-4 logo-font text-black main-header.style">
+                About Us
+            </h4>
+          </div>
         </div>
-    </div>
+            <div class="container">
+                <div class="row">
+                  <div class=".col-6.">
+                    <div>
+                      <p>We thrive on bringing out the best results for our clients
+                        and positively blaze on the internet, social media and beyond!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class=".col-6. my-auto">
+                    <h4>
+                      Contact us now to discuss how we can help...
+                    </h4>
+                  </div>
+                  <div class=".col-6. my-auto">
+                    <h4>
+                      <a href="{% url 'contact' %}" class="buy-now-button btn btn-lg rounded-0 text-uppercase py-3">Get a Quote today</a>
+                    </h4>
+                  </div>
+                  <hr>
+                  <div class= "lead .col-6. my-auto">
+                    We are a niche marketing business with the aim of shining in a fast pace world. 
+                  </div>  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>           
+    </div>                
 {% endblock %}

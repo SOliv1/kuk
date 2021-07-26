@@ -11,7 +11,7 @@ html {
     
         
 body {
-    background: url('/media/background_2020-09_cropped.jpg') no-repeat center center fixed;
+    background: url('/media/goldbackgrnd_crop.jpeg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 174px);
     color: #555;
@@ -40,10 +40,11 @@ body {
 }
 
 .buy-now-button {
-    background:rgb(204, 0, 0);
+    background: rgb(211 174 115);
     color: white;
     min-width: 260px;
 }
+
 
 .btn-black {
     background:rgb(204, 0, 0);
@@ -98,7 +99,7 @@ body {
 	top: 0;
 	left: 0;
 	position: absolute;
-	background: rgba(0, 0, 0, 0.1);
+	background: rgba(0, 0, 0, 0.2);
 	z-index: -1;
 }
 
@@ -312,7 +313,7 @@ input[name='q']::placeholder {
     }
 
     .display-4.logo-font.text-black {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .nav-link {
