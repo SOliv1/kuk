@@ -11,7 +11,7 @@ html {
     
         
 body {
-    background: url('https://kuk-milestone-4.s3.eu-west-2.amazonaws.com/media/gold_backgrndcropd.jpg') no-repeat center center fixed;
+    background: url('https://kuk-marketing.s3.eu-west-2.amazonaws.com/media/gold_backgrndcropd.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 174px);
     color: #555;
