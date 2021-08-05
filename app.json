@@ -5,3 +5,17 @@
       "addons": ["heroku-postgresql:hobby-dev"]
     }
 }
+
+...
+  "test": {
+    "formation": {
+      "test": {
+        "quantity": 3,
+      }
+    },
+    "scripts": {
+      "test": "python manage.py test --testrunner=django_parallel_test.ParallelRunner",
+    }
+  }
+...
+
