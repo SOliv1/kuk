@@ -238,8 +238,4 @@ else:
 
     DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-    # Default test runners for heroku test suite
-    TEST_RUNNER = "django_parallel_test.HerokuParallelRunner"  # or using --runner param
-    CI_NODE_TOTAL = os.environ.get("CI_NODE_TOTAL", 1)  # total number of CI dynos
-    CI_NODE_INDEX = os.environ.get("CI_NODE_INDEX", 0)  # index of the current dyno
-
+    
