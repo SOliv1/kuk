@@ -1,14 +1,15 @@
 {
   "addons": ["heroku-postgresql:standard-0"]
-  "environments": {
+  "environments", {
     "review": {
       "addons": ["heroku-postgresql:hobby-dev"]
     }
 }
 
-...
+
+
   "test": {
-    "formation": {
+    "formation", {
       "test": {
         "quantity": 3,
       }
@@ -17,5 +18,5 @@
       "test": "python manage.py test --testrunner=django_parallel_test.ParallelRunner",
     }
   }
-...
+
 
