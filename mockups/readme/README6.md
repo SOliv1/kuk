@@ -12,7 +12,7 @@
 1.  touch .gitignore
 1.  python3 manage.py runserver
 1.  python3 manage.py migrate
-1.  python3 manage.py createsuperuser
+1.  
 1.  git remote -v (we are already linked to github)
 1.  pip3 install django-allauth
 1.  configure settings
@@ -88,5 +88,5 @@
               done = boolean.Field() =    true or false.    So models.boolean field
                 
                  
-
+[![Build Status](https://travis-ci.com/SOliv1/kuk.svg?branch=master)](https://travis-ci.com/SOliv1/kuk)
 [![Build Status](https://travis-ci.com/SOliv1/ms-4-kuk-marketing.svg?branch=master)](https://travis-ci.com/SOliv1/ms-4-kuk-marketing)

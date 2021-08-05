@@ -1,3 +1,7 @@
 env.py
 env.py
 env.py
+_pycache_/
+db.sqlite3
+.venv
+.env
