@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/SOliv1/ms-4-kuk-marketing.svg?branch=master)](https://travis-ci.com/SOliv1/ms-4-kuk-marketing)
 [![CodeQL](https://github.com/SOliv1/ms-4-kuk-marketing/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/SOliv1/ms-4-kuk-marketing/actions/workflows/codeql-analysis.yml)
-[![Build Status](https://www.travis-ci.com/SOliv1/kuk.svg?branch=master)](https://www.travis-ci.com/SOliv1/kuk)
+[![Build Status](https://www.travis-ci.com/SOliv1/kuk.svg?branch=main)](https://www.travis-ci.com/SOliv1/kuk)
 
 #### Table Of Contents
 * General Information
