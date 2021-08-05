@@ -17,7 +17,7 @@
 1.  pip3 install django-allauth
 1.  configure settings
 1. install travis
-    #### travis https://travis-ci.org
+    #### travis https://travis-ci.com
         which version 
         `python -V`
     ```AUTHENTICATION_BACKENDS = [
