@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/SOliv1/ms-4-kuk-marketing.svg?branch=master)](https://travis-ci.com/SOliv1/ms-4-kuk-marketing)
 [![CodeQL](https://github.com/SOliv1/ms-4-kuk-marketing/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/SOliv1/ms-4-kuk-marketing/actions/workflows/codeql-analysis.yml)
-[![Django CI](https://github.com/SOliv1/kuk/actions/workflows/django.yml/badge.svg)](https://github.com/SOliv1/kuk/actions/workflows/django.yml)
+[![Django CI](https://github.com/SOliv1/kuk/actions/workflows/django.yml/badge.svg?branch=main)](https://github.com/SOliv1/kuk/actions/workflows/django.yml)
 [![Build Status](https://www.travis-ci.com/SOliv1/kuk.svg?branch=main)](https://www.travis-ci.com/SOliv1/kuk)
 
 #### Table Of Contents
