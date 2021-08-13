@@ -31,8 +31,8 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "my_secret_key")
 # DEBUG = False
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['kuk-marketing.herokuapp.com', 'localhost']
-# ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+#ALLOWED_HOSTS = ['kuk-marketing.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -178,7 +178,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-
+STATIC_ROOT  =   os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
@@ -202,7 +202,8 @@ if 'USE_AWS' in os.environ:
     # AWS_DEFAULT_ACL = 'None'
 
     # media and Static  files
-    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    #STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
     STATICFILES_LOCATION = 'static'
     DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
     MEDIAFILES_LOCATION = 'media'
