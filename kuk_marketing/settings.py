@@ -10,6 +10,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 import dj_database_url
+import django_heroku
+
 
 if os.path.exists('env.py'):
     import env
@@ -238,5 +240,5 @@ else:
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
+django_heroku.settings(locals(), staticfiles=False)
     

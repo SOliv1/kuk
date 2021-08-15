@@ -7,6 +7,7 @@ django-allauth==0.42.0
 django-countries==6.1.2
 django-crispy-forms==1.9.2
 django-forms-bootstrap==3.1.0
+django-heroku==0.3.1
 django-storages==1.9.1
 docutils==0.15.2
 gunicorn==20.0.4
