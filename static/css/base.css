@@ -39,15 +39,15 @@ body {
     width: fit-content;
 }
 
-.buy-now-button {
-    background: rgb(211 174 115);
+.shine-now-button {
+    background: #D3AE73;
     color: white;
     min-width: 260px;
 }
 
 
 .btn-black {
-    background:rgb(204, 0, 0);
+    background:#D3AE73;
     color: white;
 }
 
@@ -235,7 +235,7 @@ input[name='q']::placeholder {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: rgb(204, 0, 0);
+    background-color: rgb(211 174 115);
     border: 1px solid rgb(0, 0, 0);
     padding: .375rem .75rem;
     font-size: 1rem;
@@ -276,11 +276,11 @@ input[name='q']::placeholder {
 
 .custom-checkbox .custom-control-label::before {
     border-radius: 0;
-    border-color: rgb(204, 0, 0);
+    border-color: rgb(211 174 115);
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: rgb(204, 0, 0);
+    background-color: rgb(211 174 115);
     border-color:  rgb(204, 0, 0);
     border-radius: 0;
 }
