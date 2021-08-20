@@ -60,7 +60,7 @@ body {
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: rgb(211 174 115);
+    background: rgb(211, 174, 115);
     color: white !important;
 }
 
