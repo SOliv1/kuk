@@ -40,7 +40,7 @@ body {
 }
 
 .shine-now-button {
-    background: #D3AE73;
+    background: rgb(211 174 115);
     color: white;
     min-width: 260px;
 }
@@ -60,7 +60,7 @@ body {
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: black;
+    background: rgb(211 174 115);
     color: white !important;
 }
 
