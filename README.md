@@ -271,6 +271,7 @@ Under my repository name, I click to clone my repository in Desktop. I follow th
    1.   `cp - r` means copy recursively
    1.   cp -r ../.pip-modules/lib/python3.8/site-packages/allauth/templates/*
             -This copies or the allauth templates in the packages so they can be styled.
+	pip freeze --local > requirements.txt
           
    1.   Getbootstrap.com > go to documentation and copy the starter template 
 ```    
