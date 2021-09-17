@@ -51,7 +51,6 @@
 
     {% block extra_js %}
     {% endblock %}
-    
         <title>KUKMarketing{% block extra_title %}
     {% endblock %}</title>
   </head>
@@ -70,10 +69,7 @@
     {% block landing %}
     <div class="container h-100">
         <div class="row h-100">
-            <div class="col-7 col-md-6 my-auto">
-                <h1 class="display-4 logo-font text-black, main-header.style">
-                    Coming Soon
-                </h1>
+            <div class="col-md-6 my-auto">
                 <div class="my-5 justify-center">
                     <h2>
                         Shine Your Business
@@ -85,6 +81,14 @@
                 <h2>
                     Stay Tuned...
                 </h2>
+            </div>
+            <h1 class="display-4 logo-font text-black, main-header.style">
+                Coming Soon
+            </h1>
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-right text-lg-right">
+                <a href="{% url 'home' %}" class="nav-link  main-logo-link">
+                    <h2 class="logo-font text-black my-0"><strong><span>KUK</span></strong>Marketing</h2>
+                </a>
             </div> 
         </div>
     <br><br>
