@@ -74,6 +74,12 @@
     width: 160px;
 }
 
+.btn-primary {
+    color: #fff;
+    background-color: rgb(211, 174, 115);
+    border-color: .btn-primary { color: #fff;background-color: rgb(211, 174, 115);border-color: #007bff;};
+}
+
 /*-- Image-backgrounds --*/
 
 .col-md-5 img {
