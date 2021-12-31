@@ -20,7 +20,8 @@
 * Credits
 * Conclusion
 
-###  LIVE DEMO CAN BE FOUND AT HEROKU: https://kuk-marketing.herokuapp.com
+###  LIVE DEMO CAN BE FOUND AT HEROKU: https://kuk-marketing.com
+###  LIVE DEMO CAN ALSO BE FOUND AT HEROKU: https://kuk-marketing.herokuapp.com
 
 >### README is located inside the MOCKUPS FOLDER Further information and alternative view via LINK HERE
 > README.md https://1drv.ms/w/s!AgMQTPoqZgRAjBzcw6gYVD7gImdt?e=5XbCvmgit 
