@@ -24,6 +24,10 @@
     text-transform: uppercase;
 }
 
+.span {
+    color: rgb(211, 174, 115);
+}
+
 .text-black {
     color: #000!important;
 }
