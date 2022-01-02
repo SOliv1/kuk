@@ -30,7 +30,6 @@ body {
 
 .logo-font {
     text-transform: uppercase;
-    color:  color: #000;
 }
 
 /* our_brands */
@@ -41,14 +40,14 @@ body {
 }
 
 .shine-now-button {
-    background: rgb(211, 174, 115);
+    background: rgb(211 174 115);
     color: white;
     min-width: 260px;
 }
 
 
 .btn-black {
-    background: rgb(211, 174, 115);
+    background:#D3AE73;
     color: white;
 }
 
@@ -61,7 +60,7 @@ body {
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: rgb(211, 174, 115);
+    background: rgb(211 174 115);
     color: white !important;
 }
 
@@ -236,7 +235,7 @@ input[name='q']::placeholder {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: rgb(211, 174, 115);
+    background-color: rgb(211 174 115);
     border: 1px solid rgb(0, 0, 0);
     padding: .375rem .75rem;
     font-size: 1rem;
@@ -250,7 +249,7 @@ input[name='q']::placeholder {
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
 	color: #fff;
-    background-color: rgb(211, 174, 115);
+    background-color: rgb(204, 0, 0);
     border-color: rgb(0, 0, 0);
 }
 
@@ -277,12 +276,12 @@ input[name='q']::placeholder {
 
 .custom-checkbox .custom-control-label::before {
     border-radius: 0;
-    border-color: rgb(211, 174, 115);
+    border-color: rgb(211 174 115);
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: rgb(211, 174, 115);
-    border-color:  rgb(211, 174, 115);
+    background-color: rgb(211 174 115);
+    border-color:  rgb(204, 0, 0);
     border-radius: 0;
 }
 
@@ -383,7 +382,7 @@ input[name='q']::placeholder {
 }
 
 .block-divider--orange {
-    background-color: rgb(211, 174, 115);
+    background-color: rgb(204, 0, 0);
 }
 
 .block-divider--white {
@@ -413,14 +412,14 @@ input[name='q']::placeholder {
 .btn--red {
     color: black;
     background-color:transparent;
-    border-color: rgb(211, 174, 115);
+    border-color: #f05f40;
 }
 
 .btn--red:hover,
 .btn--red:active,
 .btn--red:focus,
 .btn--red:active:focus {
-    background-color:rgb(211, 174, 115);
-    border-color:rgb(211, 174, 115);
+    background-color:rgb(204, 0, 0);
+    border-color:rgb(204, 0, 0);
     color: white;
 }
