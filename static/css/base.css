@@ -103,6 +103,10 @@ body {
 	z-index: -1;
 }
 
+.bg-card-white.text-dark {
+    background-color: #ffffff8a !important;
+}
+
 a.category-badge > span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
