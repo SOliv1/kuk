@@ -104,7 +104,7 @@ body {
 }
 
 .bg-card-white.text-dark {
-    background-color: #ffffff8a !important;
+    background-color: #ffffff8a;
 }
 
 a.category-badge > span.badge:hover {
