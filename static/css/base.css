@@ -48,7 +48,7 @@ body {
 
 .btn-black {
     background:#D3AE73;
-    color: white;
+    color: #fff;
 }
 
 .btn-outline-black {
@@ -61,7 +61,7 @@ body {
 .btn-outline-black:active,
 .btn-outline-black:focus {
     background: rgb(211 174 115);
-    color: white !important;
+    color: #fff !important;
 }
 
 .shop-now-button:hover,
@@ -71,7 +71,7 @@ body {
 .btn-black:active,
 .btn-black:focus {
     background: #222;
-    color: white;
+    color: #fff;
 }
 
 .text-black {
@@ -104,7 +104,7 @@ body {
 }
 
 .bg-card-white.text-dark {
-    background-color: #fffff8;
+    background-color: #fff!important;
 	opacity: 0.5;
 }
 
