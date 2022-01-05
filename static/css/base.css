@@ -17,7 +17,12 @@ body {
     color: #555;
     font-family: 'Montserrat';
 }
-
+.box{
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
 
 /* from Bulma */
 .icon {
