@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
 from django.contrib import messages 
+from . models import Contact
 # from .services import forms
 
 
@@ -31,12 +32,24 @@ def our_brands(request):
 
 
 def contact(request, methods=["GET", "POST"]):
-    """ A view to contact us page """
-    request.GET
+    if request.method == "POST":
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        package = request.POST.get('package')
+        message = request.POST.get('message')
+        print(name, email, package, message)
 
-    return render(request, 'services/contact.html')
+        contact = Contact(name=name,email=email, package=package, message=message)
+        contact.save()
+        messages.info(request, 'Thanks for your Query.')
+        return render(request, 'services/contact.html')
+    else:
+        """ A view to contact us page """
+        request.GET
 
-    """ view-link to return about us menu on main-nav bar"""
+        return render(request, 'services/contact.html')
+
+        """ view-link to return about us menu on main-nav bar"""
 
 
 def graphic_design(request):

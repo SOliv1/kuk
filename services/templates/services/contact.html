@@ -28,42 +28,34 @@
                         <h4 class="logo-font text-black, main-header.style">
                             Contact Us
                         </h4>
-                    <form method="POST" name="sentRequirements" id="contactForm">
-                        <div class="control-group-requirements, input-group input-group-lg" >
-            
-                            <div class="form-group-requirements floating-label-form-group controls">
-                                    <label>Name</label> 
-                                    <input type="text" class="form-control" placeholder="Name" name="name" id="name"="Please enter your name.">
-                                    <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group>
-                                <div class=form-group-requirements floating-label-form-group controls">
-                                    <label for="contactFormControlInput1">Email address</label>
-                                    <input type="email" class="form-control" id="contactFormControlInput1" placeholder="Email Address" name="email" id="email"="Please enter an email address.">
-                                    <p class="help-block text-danger"></p>
-                                </div> 
-                                <div class="control-group-requirements">
-                                <label for="contactFormControlSelect1">Select a Package</label>
-                                <select class="form-control" id="contactFormControlSelect1"> 
-                                    <option> Premuim Marketing(incudes website development</option>
-                                    <option> Branding and Logos</option>
-                                    <option> Graphic Design</option>
-                                    <option> Products Only</option>
-                                    <option> Advertising</option>
-                                </select>
-                            </div>
-                        <div class="control-group-requirements">
-                            <label for="contactFormControlTextarea rows="1">Please enter your requirements and let us choose the best fit</label>
-                            <textarea class="form-control" id="contactFormControlTextarea1" rows="8"></textarea>
-                            <br>
-                            <div id="requirements-success">
-                                <div class="form-group-requirements">
-                                <button type="submit" class="btn btn-black" id="sendRequirementsButton">Submit here</button>
-                                </div>
-                            </div>
-                        </div>
+                    <form method="POST">
                         {% csrf_token %}
-                        {{ form|crispy }}
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="name">Name</label>
+                              <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
+                            </div>
+                            <div class="col">
+                                <label for="email">Email address</label>
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Last name" required>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="package">Select a Package</label>
+                            <select class="form-control" name="package" id="package" required> 
+                                <option> Premuim Marketing(incudes website development)</option>
+                                <option> Branding and Logos</option>
+                                <option> Graphic Design</option>
+                                <option> Products Only</option>
+                                <option> Advertising</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" rows="1">Please enter your requirements and let us choose the best fit</label>
+                            <textarea class="form-control" name="message" id="message" rows="8" required></textarea>
+                            <br>
+                            <button type="submit" class="btn btn-black">Submit here</button>
+                        </div>
                     </form>
                 </div>
             </div>
