@@ -15,6 +15,20 @@
         <div class="row">
             <div class="col text-center mt-3">
                 <h2 class="logo-font">KUK Services</h2>
+             <!--<div class="row text-centre mt-3"> -->
+                        <!-- <div class="g-col-6"> -->
+                    <div class="card box text-dark">
+                        <div class="g-col-6 g-col-md-4">
+
+                            <h5><strong><span>KUK</span></strong>
+                                offers a comprehensive range of services to take your company's Web presence to the next level.
+                            </h5>
+                        </div>
+                        <div class="g-col-6 g-col-md-4">
+                            <h5>Our expert designers will listen to you as they create a website that helps promote and grow your business.
+                            </h5>
+                        </div>
+                    </div>
                 {% for c in current_categories %}
                     <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
                         <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
