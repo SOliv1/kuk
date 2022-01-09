@@ -5,6 +5,7 @@
 [![CodeQL](https://github.com/SOliv1/ms-4-kuk-marketing/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/SOliv1/ms-4-kuk-marketing/actions/workflows/codeql-analysis.yml)
 [![Django CI](https://github.com/SOliv1/kuk/actions/workflows/django.yml/badge.svg?branch=main)](https://github.com/SOliv1/kuk/actions/workflows/django.yml)
 [![Build Status](https://www.travis-ci.com/SOliv1/kuk.svg?branch=main)](https://www.travis-ci.com/SOliv1/kuk)
+[![Deploy to Amazon ECS](https://github.com/SOliv1/kuk/actions/workflows/aws.yml/badge.svg?branch=main)](https://github.com/SOliv1/kuk/actions/workflows/aws.yml)
 
 #### Table Of Contents
 * General Information
