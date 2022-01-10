@@ -8,27 +8,28 @@
 
 {% block content %}
 <div class="container header-container">
-    <div class="card box text-dark">
+    <div class="card">
         <div class="card-body">
             <div class="row h-100">
-                <div class="col box card text-dark">
-                    <img class="card-img"
-                        src="https://kuk-marketing.s3.eu-west-2.amazonaws.com/media/bright-flash-2085932632_2.jpg">
+                <div class="card bg-white text-dark">
+                    <img class="card-img" src="https://kuk-marketing.s3.amazonaws.com/media/adobe-stock_353895569_12_JQykpEj.jpg" alt="Card image">
+                    <div class=".col-6 my-auto">
+                        <hr>
+                        <h5 class="display-5 logo-font text-black, header.style">
+                           Graphic Design
+                        </h5>
+                    </div>
                 </div>
-                <br><br>
-                <div class="col-7 col-md-6 my-auto">
-                <br><br>
-                    <h4 class="display-5 logo-font text-black, header.style">
-                        Graphic Design
-                    </h4>
-                <h5 class="card-text">What we do. We want to shine in a fast pace world
+            </div>
+            <div class="col-7 col-md-6 my-auto">
+                <h5>What we do. We want to shine in a fast pace world
                 </h5>
                 <p class="card-text">We thrive on bringing out the best results for our clients
                     and positively blaze on the internet, social media and beyond!
                 </p>
-                </div>
+                <p>KUK offers a comprehensive range of services to take your company's Web presence to the next level.
+                   Our expert designers will listen to you as they create a website that helps promote and grow your business.</p>
             </div>
-                
             <div class="row">
                 <div class="col-7 my-auto">
                     <h5>
@@ -37,12 +38,10 @@
                 </div>
                 <div class="my-5">
                     <h4>
-                        <a href="/services/services/contact"
-                            class="shine-now-button btn btn-lg rounded-0 text-uppercase py-3">Get Quote</a>
+                        <a href="{% url 'contact' %}" class="shine-now-button btn btn-lg rounded-0 text-uppercase py-3">Get Quote</a>
                     </h4>
                 </div>
             </div>
         </div>
     </div>
 {% endblock %}
-                    
