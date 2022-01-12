@@ -27,7 +27,9 @@
 >### README is located inside the MOCKUPS FOLDER Further information and alternative view via LINK HERE
 > README.md https://1drv.ms/w/s!AgMQTPoqZgRAjBzcw6gYVD7gImdt?e=5XbCvmgit 
 > Location of `Mockups Folder` is located directly under Media Folder directly located under Kuk_marketing app.
-  
+> On gitpod and vscode platforms to reinstall projects:
+> 
+> *pip3 install -r requirements.txt 
 ## UX Introduction - Platform for B2B lead - Visual appeal
 I wanted to create a visually appealing website to showcase the clean and classic look to a novice customer who is thinking of 
 of purchasing an initial start up project and wants something simple and straight forward without having to think too much about what they require.
@@ -226,6 +228,8 @@ To revert to a previous commit - example below:
 If I want to clone my Boutique Ado to deploy locally on GitHub desktop. 
 On GitHub, I navigate to the main page of the repository.
 Under my repository name, I click to clone my repository in Desktop. I follow the prompts in GitHub Desktop to complete the clone.  
+on gitpod to continue to use and set up features on the repository:
+*pip3 install -r requirements.txt*
 
 ###  Basic set up for my project and libraries
 *(see *CRUD functionality notes further down page*)
@@ -448,6 +452,12 @@ class CustomClearableFileInput(ClearableFileInput):
                         * Zoom and Live Streaming for consultations with potential and existing leads / clients
                         * Introduce a favicon to my website
 #### Libraries / requirements used in my project:
+
+### *pip3 install -r requirements.txt 
+
+installs the below requirements txt on github and vscode platforms:
+
+
 ```
 asgiref==3.2.10
 boto3==1.14.46
