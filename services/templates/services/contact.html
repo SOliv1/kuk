@@ -1,67 +1,52 @@
 {% extends "base.html" %}
 {% load static %}
-{% load i18n %}
-
-
-{% block page-header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col-12 col-md-8">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-md-8">
-            <h2>Contact</h2>
-        </div>
-{% endblock %}        
+{% load i18n %}  
 
 
 {% block content %}
-<div class="container header-container">
-    <div class="overlay-contact">
-        <div class="card">
-            <div class="card-body">
-                <div class="row h-100">
-                    <div class="card bg-white text-dark">
-                        <img class="card-img" src="https://kuk-milestone-4.s3.amazonaws.com/media/adobe-stock_353895569_15.jpg" alt="Card image">
-                    <div class="col mix-auto">  
-                        <h4 class="logo-font text-black, main-header.style">
-                            Contact Us
-                        </h4>
-                    <form method="POST">
-                        {% csrf_token %}
-                        <div class="form-row">
-                            <div class="col">
-                                <label for="name">Name</label>
-                              <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
-                            </div>
-                            <div class="col">
-                                <label for="email">Email address</label>
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <label for="package">Select a Package</label>
-                            <select class="form-control" name="package" id="package" required>
-                                <option>Above Beyond ... Shining Package on a Budget</option>
-                                <option>Shining Package</option>
-                                <option>Shine Out-Get Online</option>
-                                <option>The Constellations Package</option>
-                                <option>Plan to Shine Your Website</option>
-                                <option>The New Dawn</option>
-                                <option>Lets Shine on Social Media</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message" rows="1">Please enter your requirements and let us choose the best fit</label>
-                            <textarea class="form-control" name="message" id="message" rows="8" required></textarea>
-                            <br>
-                            <button type="submit" class="btn btn-black">Submit here</button>
-                        </div>
-                    </form>
+<br><br>
+<div class="card bg-white text-dark">
+    <img class="card-img" src="https://kuk-milestone-4.s3.amazonaws.com/media/adobe-stock_353895569_15.jpg" alt="Card image">
+<div class="col mix-auto card-img-overlay">  
+    <div class="d-flex justify-content-center"><h1 class="display-3">Contact Us</h1></div>
+    <div class="row justify-content-center">
+        <div class="col-8">
+            <form method="POST">
+                {% csrf_token %}
+                <div class="form-row">
+                    <div class="col">
+                        <label for="name">Name</label>
+                      <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
+                    </div>
+                    <div class="col">
+                        <label for="email">Email address</label>
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="package">Select a Package</label>
+                    <select class="form-control" name="package" id="package" required>
+                        <option>Above Beyond ... Shining Package on a Budget</option>
+                        <option>Shining Package</option>
+                        <option>Shine Out-Get Online</option>
+                        <option>The Constellations Package</option>
+                        <option>Plan to Shine Your Website</option>
+                        <option>The New Dawn</option>
+                        <option>Lets Shine on Social Media</option>
+                    </select>
                 </div>
-            </div>
+                <div class="form-group">
+                    <label for="message" rows="1">Please enter your requirements and let us choose the best fit</label>
+                    <textarea class="form-control" name="message" id="message" rows="8" required></textarea>
+                    <br>
+                    <button type="submit" class="btn btn-black">Submit here</button>
+                </div>
+            </form>
         </div>
-    </div>
+      </div>
+    
+    
+
+</div>
 </div>
 {% endblock %}
