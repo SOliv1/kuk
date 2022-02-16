@@ -6,6 +6,7 @@
 [![Django CI](https://github.com/SOliv1/kuk/actions/workflows/django.yml/badge.svg?branch=main)](https://github.com/SOliv1/kuk/actions/workflows/django.yml)
 [![Build Status](https://www.travis-ci.com/SOliv1/kuk.svg?branch=main)](https://www.travis-ci.com/SOliv1/kuk)
 [![Deploy to Amazon ECS](https://github.com/SOliv1/kuk/actions/workflows/aws.yml/badge.svg?branch=main)](https://github.com/SOliv1/kuk/actions/workflows/aws.yml)
+[![wakatime](https://wakatime.com/badge/github/SOliv1/kuk.svg)](https://wakatime.com/badge/github/SOliv1/kuk)
 
 #### Table Of Contents
 * General Information
