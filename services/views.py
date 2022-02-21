@@ -18,6 +18,11 @@ def brands(request):
 
     return render(request, 'services/brands.html')
 
+def album(request):
+    """ A view to album page """
+
+    return render(request, 'services/album.html')
+
 
 def about(request):
     """ view to return the about page """
