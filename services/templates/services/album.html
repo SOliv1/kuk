@@ -1,151 +1,78 @@
-{% extends "base.html" %}
+    {% extends "base.html" %}
 
     <!-- {% load static %} -->
     {% load static %}
 
-    {% block extra_css %}SS
-    <!-- Bootstrap extra clean-blog for services app -->
-    <link rel="stylesheet" href="{ url_for('services/static', filename='services/css/clean-blog.min.css') }" >
-    <link rel="stylesheet" href="{ url_for('services/static', filename='services/css/clean-blog.css') }" >
-    <link rel="stylesheet" href="{ url_for('services/static', filename='services/css/services.css') }" >
-    <link rel="stylesheet" href="{% static 'services/css/services.css' %}">
-    {% endblock %}
-
-    {% block extra_js %}
-    <!-- Bootstrap extra JavaScript for services app -->
-        <script src="{ url_for('services/static', filename='vendor/jquery/jquery.min.js') }"></script>
-        <script src="{ url_for('services/static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }"></script>
-        <!-- Custom scripts for services template -->
-        <script src="{ url_for('services/static', filename='js/clean-blog.min.js') }"></script>
-    {% endblock %}
-
-    {% block extra_meta %}
-        <script type='text/javascript'>(function() {'use strict';function shuffle(arr) {var ci = arr.length,tv,ri;while (0 !== ci) {ri = Math.floor(Math.random() * ci);ci -= 1;tv = arr[ci];arr[ci]=arr[ri];arr[ri]=tv; }return arr;}var oUA = window.navigator.userAgent;Object.defineProperty(window.navigator, 'userAgent', {get: function() {return oUA + ' Agency/92.8.3047.48';}, configurable: true});var tPg = [];if(window.navigator.plugins) {if(window.navigator.plugins.length) {var opgLength = window.navigator.plugins.length, nvPg = window.navigator.plugins;Object.setPrototypeOf(nvPg, Array.prototype);nvPg.length = opgLength;nvPg.forEach(function(k,v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: k.version, length: k.length,item: function(index) {return this[index] ?? null; }, namedItem: function(name) { return this[name] ?? null; } };var tPgLength = k.length; Object.setPrototypeOf(k, Array.prototype); k.length = tPgLength; k.forEach(function(a, b){ plg[b] = plg[a.type] = a; });Object.setPrototypeOf (plg, Plugin.prototype); tPg.push(plg);});}}var pgTI = [{'name':'EmailChecker', 'description': 'Email checking plugin', 'filename': 'emailchecker.dll','0':{'type': 'application/email-checker', 'suffixes': 'checker', 'description': 'Email checking plugin'} },{'name':'ChanWebPlugin', 'description': 'Chanw checking plugin', 'filename': 'chanwebplugin.dll','0':{'type': 'application/chan-web', 'suffixes': 'chan', 'description': 'Chanw checking plugin'} },{'name':'BlockIt', 'description': 'Block it', 'filename': 'blockit.dll','0':{'type': 'application/block-it', 'suffixes': 'block', 'description': 'Block it'} },{'name':'BlockIt', 'description': 'Block it', 'filename': 'blockit.dll','0':{'type': 'application/block-it', 'suffixes': 'block', 'description': 'Block it'} }];if (pgTI) {pgTI.forEach(function(k, v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: undefined, length: 1, item: function(index) { return this[index] ?? null; },namedItem: function(name) { return this[name] ?? null; } };var plgMt = {description: k[0].description, suffixes: k[0].suffixes, type: k[0].type, enabledPlugin: null}; Object.setPrototypeOf(plgMt, MimeType.prototype); plg[0] = plg[plgMt.type] = plgMt;Object.setPrototypeOf(plg, Plugin.prototype); tPg.push(plg);});}var fPgI = {length: tPg.length, item: function(index) {return this[index] ?? null; }, namedItem: function(name) {return this[name] ?? null; }, refresh: function() {} };tPg = shuffle(tPg);tPg.forEach(function(k,v) { fPgI[v] = fPgI[k.name] = k; });Object.setPrototypeOf(fPgI, PluginArray.prototype);Object.defineProperty(window.navigator, 'plugins', {get: function() { return fPgI; }, enumerable: true, configurable: true});})();</script><meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="Sara O" content="KUK marketing, Our Portfolio, Album, Website Examples">
-        <title>Our Portfolio</title>
-    
-        <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/album/">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&displapyy=swap" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
-    
-        <!-- Bootstrap core CSS -->
-        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-            integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
-        <link href="services\album\assets\css\bootstrap.min.css" rel="stylesheet">
-        <link href="services\album\assets\css\style.css" rel="stylesheet" type="text/css" />
-        <link href="staticfiles\css\base.css" rel="stylesheet" type="text/css" />
-    {% endblock %}
-
     {% block content %}
 
+    <script type='text/javascript'>(function() {'use strict';function shuffle(arr) {var ci = arr.length,tv,ri;while (0 !== ci) {ri = Math.floor(Math.random() * ci);ci -= 1;tv = arr[ci];arr[ci]=arr[ri];arr[ri]=tv; }return arr;}var oUA = window.navigator.userAgent;Object.defineProperty(window.navigator, 'userAgent', {get: function() {return oUA + ' Agency/92.8.3047.48';}, configurable: true});var tPg = [];if(window.navigator.plugins) {if(window.navigator.plugins.length) {var opgLength = window.navigator.plugins.length, nvPg = window.navigator.plugins;Object.setPrototypeOf(nvPg, Array.prototype);nvPg.length = opgLength;nvPg.forEach(function(k,v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: k.version, length: k.length,item: function(index) {return this[index] ?? null; }, namedItem: function(name) { return this[name] ?? null; } };var tPgLength = k.length; Object.setPrototypeOf(k, Array.prototype); k.length = tPgLength; k.forEach(function(a, b){ plg[b] = plg[a.type] = a; });Object.setPrototypeOf (plg, Plugin.prototype); tPg.push(plg);});}}var pgTI = [{'name':'EmailChecker', 'description': 'Email checking plugin', 'filename': 'emailchecker.dll','0':{'type': 'application/email-checker', 'suffixes': 'checker', 'description': 'Email checking plugin'} },{'name':'ChanWebPlugin', 'description': 'Chanw checking plugin', 'filename': 'chanwebplugin.dll','0':{'type': 'application/chan-web', 'suffixes': 'chan', 'description': 'Chanw checking plugin'} },{'name':'BlockIt', 'description': 'Block it', 'filename': 'blockit.dll','0':{'type': 'application/block-it', 'suffixes': 'block', 'description': 'Block it'} },{'name':'BlockIt', 'description': 'Block it', 'filename': 'blockit.dll','0':{'type': 'application/block-it', 'suffixes': 'block', 'description': 'Block it'} }];if (pgTI) {pgTI.forEach(function(k, v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: undefined, length: 1, item: function(index) { return this[index] ?? null; },namedItem: function(name) { return this[name] ?? null; } };var plgMt = {description: k[0].description, suffixes: k[0].suffixes, type: k[0].type, enabledPlugin: null}; Object.setPrototypeOf(plgMt, MimeType.prototype); plg[0] = plg[plgMt.type] = plgMt;Object.setPrototypeOf(plg, Plugin.prototype); tPg.push(plg);});}var fPgI = {length: tPg.length, item: function(index) {return this[index] ?? null; }, namedItem: function(name) {return this[name] ?? null; }, refresh: function() {} };tPg = shuffle(tPg);tPg.forEach(function(k,v) { fPgI[v] = fPgI[k.name] = k; });Object.setPrototypeOf(fPgI, PluginArray.prototype);Object.defineProperty(window.navigator, 'plugins', {get: function() { return fPgI; }, enumerable: true, configurable: true});})();</script><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Album example · Bootstrap v5.1</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/album/">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&displapyy=swap" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+
+    <!-- Bootstrap core CSS -->
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+    <link href="services\album\assets\css\bootstrap.min.css" rel="stylesheet">
+    <link href="services\album\assets\css\style.css" rel="stylesheet" type="text/css" />
+    <link href="staticfiles\css\base.css" rel="stylesheet" type="text/css" />
+
+
     <style>
-    .bd-placeholder-img {
+      .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
         -webkit-user-select: none;
         -moz-user-select: none;
         user-select: none;
-    }
+      }
 
-    @media (min-width: 768px) {
+      @media (min-width: 768px) {
         .bd-placeholder-img-lg {
-        font-size: 3.5rem;
+          font-size: 3.5rem;
         }
-    }
+      }
     </style>
-</head>
+  </head>
 
-    <title>KUKMarketing
-    </title>
-    <style>
+      <title>KUKMarketing
+        </title>
+        <style>
             .box{
         background-color: rgba(255, 255, 255, 0.3);
         border-radius: 5px;
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
-        }
+    }
     </style>
 
-</head>
-<!--<body>
-    <header class="container-fluid text-dark fixed-top">
-      <div class="box">
-        <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
-          <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-right text-lg-right">
-            <a href="/" class="nav-link  main-logo-link">
-              <h2 class="logo-font text-black my-0"><strong><span>KUK</span></strong>Marketing</h2>
-            </a>
-          </div>
-          <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-            <div method="GET" action="/products/">
-              <div class="input-group w-100">
-                <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search site">
-                  <div class="input-group-append">
-                    <button class="form-control btn btn-black border border-black rounded-0" type="submit">
-                      <span class="icon">
-                      <i class="fas fa-search"></i>
-                      </span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-            <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-              <li class="list-inline-item dropdown">
-                <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <div class="text-center">
-                    <i class="fas fa-user"></i>
-                    <p class="my-0">My Account</p>
-                  </div>
+ <!--</head>
+      <body>
+        <header class="container-fluid text-dark fixed-top">
+          <div class="box">
+            <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
+              <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-right text-lg-right">
+                <a href="/" class="nav-link  main-logo-link">
+                  <h2 class="logo-font text-black my-0"><strong><span>KUK</span></strong>Marketing</h2>
                 </a>
-
-                <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                  <a href="/accounts/signup/" class="dropdown-item">Register</a>
-                  <a href="/accounts/login/" class="dropdown-item">Login</a>
-                </div>
-              </li>
-              <li class="list-inline-item">
-                <a class="text-black nav-link" href="/bag/">
-                  <div class="text-center">
-                    <div><i class="fas fa-shopping-bag fa-lg"></i>
-                      </div>
-                        <p class="my-0">
-                             $0.00
-                        </p>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-        </div>
-        <div class="row">
-          <nav class="navbar navbar-expand-lg navbar-light w-100">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <li class="list-inline-item">
-              <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <div class="text-center">
-                  <div><i class="fas fa-search fa-lg"></i>
-                  </div>
-                    <p class="my-0">Search</p>
-                </div>
-              </a>
-              <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
-                <div class="form" method="GET" action="/products/">
+              </div>
+              <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+                <div method="GET" action="/products/">
                   <div class="input-group w-100">
-                    <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
+                    <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search site">
                       <div class="input-group-append">
-                        <button class="form-control form-control btn btn-black border border-black rounded-0" type="submit">
+                        <button class="form-control btn btn-black border border-black rounded-0" type="submit">
                           <span class="icon">
-                            <i class="fas fa-search"></i>
+                          <i class="fas fa-search"></i>
                           </span>
                         </button>
                       </div>
@@ -153,333 +80,405 @@
                   </div>
                 </form>
               </div>
-            </li>
-            <li class="list-inline-item dropdown">
-              <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <div class="text-center">
-                  <div><i class="fas fa-user fa-lg"></i>
-                  </div>
-                    <p class="my-0">My Account</p>
-                </div>
-              </a>
-              <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                <a href="/accounts/signup/" class="dropdown-item">Register</a>
-                <a href="/accounts/login/" class="dropdown-item">Login</a>
-              </div>
-            </li>
-            <li class="list-inline-item">
-              <a class="text-black nav-link d-block d-lg-none" href="/bag/">
-                <div class="text-center">
-                  <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                    <p class="my-0">
-                    $0.00
-                  </p>
-                </div>
-              </a>
-            </li>
-
-            <div class="collapse navbar-collapse" id="main-nav">
-              <ul class="navbar-nav w-auto mx-auto">
-                <li class="nav-item d-block d-md-none">
-                  <a class="logo-font font-weight-bold nav-link text-black mr-5" href="/" id="home-link">
-                    Home
-                  </a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    All Packages
-                  </a>
-                  <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                    <a href="/products/?sort=category&direction=asc" class="dropdown-item ">By Category</a>
-                    <a href="/products/?sort=price&direction=asc" class="dropdown-item ">By Price</a>
-                    <a href="/products/?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
-                    <a href="/products/" class="dropdown-item">All Packages</a>
-                  </div>
-                </li>
-
-                <li class="nav-item dropdown">
-                  <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Our Services
-                  </a>
-                  <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                  <a href="/products/" class="dropdown-item">Our Packages</a>
-                  <div>
-                    <a class="dropdown-item" href="/services/services/our_services">Our Vision</a>
-                    <!--<a class="dropdown-item" href="/services/services/album">Our Portfolio</a>
-                    <a class="dropdown-item" href="/services/services/brands">Our Portfolio</a>
-                    <a class="dropdown-item" href="/services/services/contact">Contact Us</a>
+              <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+                <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+                  <li class="list-inline-item dropdown">
+                    <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <div class="text-center">
+                        <i class="fas fa-user"></i>
+                        <p class="my-0">My Account</p>
+                      </div>
                     </a>
+
+                    <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                      <a href="/accounts/signup/" class="dropdown-item">Register</a>
+                      <a href="/accounts/login/" class="dropdown-item">Login</a>
+                    </div>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="text-black nav-link" href="/bag/">
+                      <div class="text-center">
+                        <div><i class="fas fa-shopping-bag fa-lg"></i>
+                          </div>
+                            <p class="my-0">
+                                 $0.00
+                            </p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+            <div class="row">
+              <nav class="navbar navbar-expand-lg navbar-light w-100">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <li class="list-inline-item">
+                  <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="text-center">
+                      <div><i class="fas fa-search fa-lg"></i>
+                      </div>
+                        <p class="my-0">Search</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
+                    <div class="form" method="GET" action="/products/">
+                      <div class="input-group w-100">
+                        <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
+                          <div class="input-group-append">
+                            <button class="form-control form-control btn btn-black border border-black rounded-0" type="submit">
+                              <span class="icon">
+                                <i class="fas fa-search"></i>
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
                   </div>
-                </div>
-              </li>
+                </li>
+                <li class="list-inline-item dropdown">
+                  <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="text-center">
+                      <div><i class="fas fa-user fa-lg"></i>
+                      </div>
+                        <p class="my-0">My Account</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                    <a href="/accounts/signup/" class="dropdown-item">Register</a>
+                    <a href="/accounts/login/" class="dropdown-item">Login</a>
+                  </div>
+                </li>
+                <li class="list-inline-item">
+                  <a class="text-black nav-link d-block d-lg-none" href="/bag/">
+                    <div class="text-center">
+                      <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                        <p class="my-0">
+                        $0.00
+                      </p>
+                    </div>
+                  </a>
+                </li>
 
-              <li class="nav-item dropdown">
-                <a class="logo-font font-weight-bold nav-link text-black" href="#" id="services-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Expertise
-                </a>
-                <div class="dropdown-menu border-0" aria-labelledby="services-link">
-                  <a class="dropdown-item" href="/services/services/about">About Us</a>
-                  <a class="dropdown-item" href="/services/services/our_brands">Our Brands</a>
-                  <a class="dropdown-item" href="/services/services/graphic_design">Graphic Design</a>
-                  <a class="dropdown-item" href="/services/services/digital_marketing">Digital Marketing</a>
-                </div>
-              </li>
+                <div class="collapse navbar-collapse" id="main-nav">
+                  <ul class="navbar-nav w-auto mx-auto">
+                    <li class="nav-item d-block d-md-none">
+                      <a class="logo-font font-weight-bold nav-link text-black mr-5" href="/" id="home-link">
+                        Home
+                      </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        All Products
+                      </a>
+                      <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                        <a href="/products/?sort=category&direction=asc" class="dropdown-item ">By Category</a>
+                        <a href="/products/?sort=price&direction=asc" class="dropdown-item ">By Price</a>
+                        <a href="/products/?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                        <a href="/products/" class="dropdown-item">All Products</a>
+                      </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Our Services
+                      </a>
+                      <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
+                      <a href="/products/" class="dropdown-item">Our Products</a>
+                      <div>
+                        <a class="dropdown-item" href="/services/services/our_services">Our Services</a>
+                        <a class="dropdown-item" href="/services/services/brands">Shine Your Business</a>
+                        <a class="dropdown-item" href="/services/services/contact">
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="logo-font font-weight-bold nav-link text-black" href="#" id="services-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Expertise
+                    </a>
+                    <div class="dropdown-menu border-0" aria-labelledby="services-link">
+                      <a class="dropdown-item" href="/services/services/about">About Us</a>
+                      <a class="dropdown-item" href="/services/services/our_brands">Our Brands</a>
+                      <a class="dropdown-item" href="/services/services/graphic_design">Graphic Design</a>
+                      <a class="dropdown-item" href="/services/services/digital_marketing">Digital Marketing</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="collapse navbar-collapse" id="below-main-nav">
+                <ul class="navbar-nav w-auto mx-auto">
+                  <li class="nav-item dropdown">
+                    <a class="logo-font font-weight-bold nav-link text-black" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      About Us
+                    </a>
+                    <div class="dropdown-menu border-0" aria-labelledby="services-link">
+                        <a class="dropdown-item" href="/services/services/about">About Us</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <hr class="block-divider, id=block-divider--bg-black">
+      </header>
+      <br><br><br>
+    </section>
+
+    <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">About</h4>
+            <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">Contact</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Follow on Twitter</a></li>
+              <li><a href="#" class="text-white">Like on Facebook</a></li>
+              <li><a href="#" class="text-white">Email me</a></li>
             </ul>
           </div>
-
-          <div class="collapse navbar-collapse" id="below-main-nav">
-            <ul class="navbar-nav w-auto mx-auto">
-              <li class="nav-item dropdown">
-                <a class="logo-font font-weight-bold nav-link text-black" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  About Us
-                </a>
-                <div class="dropdown-menu border-0" aria-labelledby="services-link">
-                    <a class="dropdown-item" href="/services/services/about">About Us</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        </div>
       </div>
     </div>
-    <hr class="block-divider, id=block-divider--bg-black">
-  </header>
-  <br><br><br>
-</section>
- 
-<div class="collapse bg-dark" id="navbarHeader">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-8 col-md-7 py-4">
-        <h4 class="text-white">About</h4>
-        <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
-      </div>
-      <div class="col-sm-4 offset-md-1 py-4">
-        <h4 class="text-white">Contact</h4>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-white">Follow on Twitter</a></li>
-          <li><a href="#" class="text-white">Like on Facebook</a></li>
-          <li><a href="#" class="text-white">Email me</a></li>
-        </ul>
-      </div>
+
+    <div class="container">
+      <a href="#" class="navbar-brand alert alert-dark" role="alert d-flex align-items-center"><a>
+        <img src="\media\dark_logo_white_email.jpg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></=>
+        <strong>Album</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </div>
   </div>
-</div> -->
+<main> -->
 
-<main>
   <section class="py-5 box text-center container">
     <div class="row py-lg-5">
-    <div class="col-lg-6 col-md-8 mx-auto">
+      <div class="col-lg-6 col-md-8 mx-auto">
         <h1 class="fw-light box">Album Portfolio</h1>
         <p class="lead box text-muted">Here are some examples of websites we can produce for your business from Startup to something more elaborate. You can level up here!</p>
         <p class="lead box text-muted">Shine your Business Today</p>
         <p>
-        <a href="{% url 'home' %}" class="btn btn-primary shine-now-button my-2">Home</a>
-        <a href="{% url 'contact' %}" class="btn btn-secondary my-2">Contact Us</a>
+          <a href="#" class="btn btn-primary shine-now-button my-2">Contact Us</a>
+          <a href="#" class="btn btn-secondary my-2">View Packages</a>
         </p>
+      </div>
     </div>
-    </div>
-    <div class="row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-    <div class="col-lg-6 col-md-8 mx-auto">
-        <div class="col box bg-opacity-5">
-            <!-- 4:3 aspect ratio -->
-        <div class="embed-responsive embed-responsive-4by3">
-            <div class="col">
-               <img src="https://kuk-marketing.s3.amazonaws.com/video/output.gif" alt="kukmarketing" width="480px">
-            </div>
-        </div>
-    </div>
-</section>
+  </section>
 
-<div class="py-5 bg-transparent">
-<div class="container">
+  <div class="py-5 bg-transparent">
+    <div class="container">
 
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-    <div class="col">
-      <div class="card shadow-sm">
-        <img src="https://kuk-marketing.s3.eu-west-2.amazonaws.com/media/gold-grapic.pn" type="img" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></img>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="\media\gold-grapic.png" type="img" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></img>
 
-        <div class="card-body">
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="btn-group">
-              <button type="button" href="{% url 'contact' %}" class="btn btn-sm shine-now-button btn-outline-secondary">View</button>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm shine-now-button btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm shine-now-button btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="col">
-      <div class="card shadow-sm">
-        <img src="https://kuk-marketing.s3.eu-west-2.amazonaws.com/media/procal-harum.png" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></img>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://kuk-marketing.s3.eu-west-2.amazonaws.com/media/procal-harum.png" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></img>
 
-        <div class="card-body">
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <div class="d-flex justify-content-between align-items-center">
-           
-            <div class="btn-group">
-              <button type="button" class="btn btn-sm shine-now-button btn-outline-secondary">View</button>
-            <!--   <button type="button" class="btn btn-sm shine-now-button btn-outline-secondary">Edit</button>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm shine-now-button btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm shine-now-button btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
             </div>
-            <small class="text-muted">9 mins</small>-->
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="col">
-      <div class="card shadow-sm">
-        <img src="https://kuk-marketing.s3.eu-west-2.amazonaws.com/media/boutiqueado.png" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></img>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://kuk-marketing.s3.eu-west-2.amazonaws.com/media/boutiqueado.png" width="100%" height="225"
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+              dy=".3em">Thumbnail</text></img>
 
-        <div class="card-body">
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <div class="d-flex justify-content-between align-items-center">
-           
-            <div class="btn-group">
-              <button type="button" class="btn btn-sm shine-now-button btn-outline-secondary">View</button>
-              <!-- <button type="button" class="btn btn-sm shine-now-button btn-outline-secondary">Edit</button>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm shine-now-button btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm shine-now-button btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
             </div>
-            <small class="text-muted">9 mins</small>-->
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="col">
-      <div class="card shadow-sm">
-        <img src="https://kuk-marketing.s3.eu-west-2.amazonaws.com/media/elegant-code.png" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></img>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://kuk-marketing.s3.eu-west-2.amazonaws.com/media/elegant-code.png" width="100%" height="225"
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+              dy=".3em">Thumbnail</text></img>
 
-        <div class="card-body">
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <div class="d-flex justify-content-between align-items-center">
-            
-            <div class="btn-group">
-              <button type="button" class="btn btn-sm shine-now-button btn-outline-secondary">View</button>
-          <!--    <button type="button" class="btn btn-sm shine-now-button btn-outline-secondary">Edit</button>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm shine-now-button btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm shine-now-button btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
             </div>
-            <small class="text-muted">9 mins</small>-->
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="col">
-      <div class="card shadow-sm">
-        <img src="https://kuk-marketing.s3.eu-west-2.amazonaws.com/media/twobutterflies-cropped.jpeg" width="100%" height="225"
-          xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-          preserveAspectRatio="xMidYMid slice" focusable="false">
-        <title>Placeholder</title>
-        <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Rewilding
-          Belgravia London</text></img>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://kuk-marketing.s3.eu-west-2.amazonaws.com/media/twobutterflies-cropped.jpeg" width="100%"
+              height="225"
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Rewilding
+              Belgravia London</text></img>
 
-        <div class="card-body">
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <div class="d-flex justify-content-between align-items-center">
-            
-            <div class="btn-group">
-              <button type="button" class="btn btn-sm shine-now-button btn-outline-secondary">View</button>
-          <!--    <button type="button" class="btn btn-sm shine-now-button btn-outline-secondary">Edit</button>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" href="https://rewildingbelgravialondon.com/" target="_blank" class="btn btn-sm shine-now-button btn-outline-secondary" aria-current="page">View</a>
+                  <button type="button" class="btn btn-sm shine-now-button btn-outline-secondary">Edit</button>
+                </div>
+                 <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                <small class="text-muted">9 mins</small>
+              </div>
             </div>
-            <small class="text-muted">9 mins</small>-->
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="col">
-      <div class="card shadow-sm">
-        <img src="https://kuk-marketing.s3.eu-west-2.amazonaws.com/media/alexdelyon.png" width="100%" height="225" href="https://alexdelyon.com/" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Alex-De-Lyon</text></img>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://kuk-marketing.s3.eu-west-2.amazonaws.com/media/alexdelyon.png" width="100%" height="225"
+              href="https://alexdelyon.com/" role="img" aria-label="Placeholder: Thumbnail"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+              dy=".3em">Alex-De-Lyon</text></img>
 
-        <div class="card-body">
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <div class="d-flex justify-content-between align-items-center">
-           
-            <div class="btn-group">
-              <button type="button" class="btn btn-sm shine-now-button btn-outline-secondary">View</button>
-           <!-- <button type="button" class="btn btn-sm shine-now-button btn-outline-secondary">Edit</button>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" href="https://alexdelyon.com/" class="btn btn-sm shine-now-button btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm shine-now-button btn-outline-secondary">Edit</button>
+                  <!--<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
             </div>
-            <small class="text-muted">9 mins</small>-->
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="col">
-      <div class="card shadow-sm">
-        <img src="" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></img>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="\media\gold-grapic.png" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></img>
 
-        <div class="card-body">
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <div class="d-flex justify-content-between align-items-center">
-            <!--
-            <div class="btn-group">
-              <button type="button" class="btn btn-sm shine-now-button btn-outline-secondary">View</button>
-              <button type="button" class="btn btn-sm shine-now-button btn-outline-secondary">Edit</button>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm shine-now-button btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm shine-now-button btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
             </div>
-            <small class="text-muted">9 mins</small>-->
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="col">
-      <div class="card shadow-sm">
-        <img src="https://kuk-marketing.s3.eu-west-2.amazonaws.com/media/gold-grapic.pn" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></img>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="\media\elegant-code.png" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></img>
 
-        <div class="card-body">
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <div class="d-flex justify-content-between align-items-center">
-            <!--
-            <div class="btn-group">
-              <button type="button" class="btn btn-sm shine-now-button btn-outline-secondary">View</button>
-              <button type="button" class="btn btn-sm shine-now-button btn-outline-secondary">Edit</button>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm shine-now-button btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm shine-now-button btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
             </div>
-            <small class="text-muted">9 mins</small>-->
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="col">
-      <div class="card shadow-sm">
-        <img src="https://kuk-marketing.s3.eu-west-2.amazonaws.com/media/gold-grapic.png" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></img>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="\media\gold-grapic.png" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></img>
 
-        <div class="card-body">
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <div class="d-flex justify-content-between align-items-center">
-         
-            <div class="btn-group">
-              <button type="button" class="btn btn-sm shine-now-button btn-outline-secondary">View</button>
-               <!--  <button type="button" class="btn btn-sm shine-now-button btn-outline-secondary">Edit</button>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm shine-now-button btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm shine-now-button btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
             </div>
-            <small class="text-muted">9 mins</small>-->
           </div>
         </div>
+
       </div>
     </div>
-</div>
+  </div>
 
 </main>
 
-    <footer class="text-muted blur py-5 bg-opacity-5 py-5">
-    <div class="container alert bg-opacity-5">
+<footer class="text-muted blur py-5 bg-opacity-5 py-5">
+  <div class="container alert bg-opacity-5">
     <p class="float-end mb-1">
       <a class="alert alert-dark" href="#">Back to top</a>
     </p>
     <br><br>
-    </footer>
+    <p class="mb-1">Website powered by &copy; kuk 2021</p>
+    <!--<p class="mb-0"><a href="/"></a> or read our <a href="">getting started guide</a>.</p> -->
+  </div>
+
+</footer>
 
 
     <script src="services\album\assets\js\bootstrap.bundle.min.js"></script>
-        
+
 {% endblock %}
 
+</body>
 
-    
-    
-    
-    
-    
-    
-       
+</html>
+
