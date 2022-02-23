@@ -74,7 +74,7 @@
     width: 160px;
 }
 
-.btn-primary {
+a.btn.btn-primary.shine-now-button.my-2 { 
     color: #fff;
     background-color: rgb(211, 174, 115);
     border-color: .btn-primary { color: #fff;background-color: rgb(211, 174, 115);border-color: #007bff;};
