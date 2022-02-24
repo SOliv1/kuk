@@ -80,6 +80,10 @@ a.btn.btn-primary.shine-now-button.my-2 {
     border-color: .btn-primary { color: #fff;background-color: rgb(211, 174, 115);border-color: #007bff;};
 }
 
+a.btn.btn-sm.shine-now-button.btn-outline-secondary {
+    background-color: rgb(211, 174, 115);
+}
+
 /*-- Image-backgrounds --*/
 
 .col-md-5 img {
