@@ -28,7 +28,6 @@ workflows:
   say-hello-workflow:
     jobs:
       - say-hello
-    jobs:
     deploy:
     executor: heroku/default
     steps:
