@@ -2,16 +2,18 @@ version: 2
 jobs:
   say-hello:
     docker:
-    - image: cimg/base:stable
+      - image: cimg/base:stable
     steps:
-    - checkout
-    - run:
-        name: Say hello
-        command: echo Hello, World!
+      - checkout
+      - run:
+          name: Say hello
+          command: echo Hello, World!
+    # The resource_class feature allows configuring CPU and RAM resources for each job. Different resource classes are available for different executors. https://circleci.com/docs/2.0/configuration-reference/#resourceclass
+    resource_class: large
 workflows:
   say-hello-workflow:
     jobs:
-    - say-hello
+      - say-hello
   version: 2
 
 # Original config.yml file:
