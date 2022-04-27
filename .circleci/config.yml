@@ -28,8 +28,6 @@ workflows:
   say-hello-workflow:
     jobs:
       - say-hello
-    deploy:
-    executor: heroku/default
     steps:
       - checkout
       - heroku/install
