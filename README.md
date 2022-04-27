@@ -6,6 +6,7 @@
 [![Django CI](https://github.com/SOliv1/kuk/actions/workflows/django.yml/badge.svg?branch=main)](https://github.com/SOliv1/kuk/actions/workflows/django.yml)
 [![Build Status](https://www.travis-ci.com/SOliv1/kuk.svg?branch=main)](https://www.travis-ci.com/SOliv1/kuk)
 [![CircleCI](https://circleci.com/gh/SOliv1/kuk/tree/main.svg?style=svg)](https://circleci.com/gh/SOliv1/kuk/tree/main)
+[![Deploy](https://github.com/SOliv1/kuk/actions/workflows/main.yml/badge.svg)](https://github.com/SOliv1/kuk/actions/workflows/main.yml)
 [![wakatime](https://wakatime.com/badge/github/SOliv1/kuk.svg)](https://wakatime.com/badge/github/SOliv1/kuk)
 
 #### Table Of Contents
