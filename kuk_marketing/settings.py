@@ -30,8 +30,8 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "my_secret_key")
 # if os.environ.get("DEVELOPMENT"):
 #    development = True
 # else:
-# DEBUG = False
-DEBUG = (os.environ.get('DEBUG') == 'True')
+DEBUG = 'DEVELOPMENT' in os.environ
+# DEBUG = (os.environ.get('DEBUG') == 'True')
 
 ALLOWED_HOSTS = ['kuk-marketing.herokuapp.com', 'localhost', '127.0.0.1', 'www.kukmarketing.com']
 #ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
