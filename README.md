@@ -31,7 +31,7 @@
 > Location of `Mockups Folder` is located directly under Media Folder directly located under Kuk_marketing app.
 > On gitpod and vscode platforms to reinstall projects:
 > 
-> ***pip3 install -r requirements.txt **
+> *****pip3 install -r requirements.txt** **
 ## UX Introduction - Platform for B2B lead - Visual appeal
 I wanted to create a visually appealing website to showcase the clean and classic look to a novice customer who is thinking of 
 of purchasing an initial start up project and wants something simple and straight forward without having to think too much about what they require.
