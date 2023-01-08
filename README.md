@@ -26,12 +26,15 @@
 ###  LIVE DEMO CAN BE FOUND AT HEROKU: https://www.kukmarketing.com
 ###  LIVE DEMO CAN ALSO BE FOUND AT HEROKU: https://kuk-marketing.herokuapp.com
 
->### README is located inside the MOCKUPS FOLDER Further information and alternative view via LINK HERE
+> ### README is located inside the MOCKUPS FOLDER Further information and alternative view via LINK HERE
 > README.md https://1drv.ms/w/s!AgMQTPoqZgRAjBzcw6gYVD7gImdt?e=5XbCvmgit 
 > Location of `Mockups Folder` is located directly under Media Folder directly located under Kuk_marketing app.
 > On gitpod and vscode platforms to reinstall projects:
 > 
 > *****pip3 install -r requirements.txt** **
+
+>** 2023 - Latest UPDATE - WHERE AS i HAD A DATABASE AND COLLECTION OF PACKAGES; HEROKU DECIDED TO CHARGE FOR THE HOBBY POSTGRES DATABASE, i HAVE DEDICED TO CANCEL OUT MY PACKAGES FOR NOW UNTIL WHETHER OR NOT I DECIDE IT IS WORTH KEEPING THE DATABASE GOING ON A PAY MONTHLY BASIS.  ALTHOUGH ON ITS OWN THE BASIC PAID DATASE IS AFFORDABLE; IT IS WHEN YOU RUN SEVERAL OF THEM; YOU HAVE TO SUDDENLY DECIDE TO UPDATE YOUR PACKAGE PRICES SO YOU CAN INCORPORATE THEM INTO YOUR FUTURE PROJECTS.  i AM NOT A HAPPY BUNNY - A CASE OF PAY MORE FOR LESS IN MY OPINION! **
+
 ## UX Introduction - Platform for B2B lead - Visual appeal
 I wanted to create a visually appealing website to showcase the clean and classic look to a novice customer who is thinking of 
 of purchasing an initial start up project and wants something simple and straight forward without having to think too much about what they require.
