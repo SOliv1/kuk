@@ -620,8 +620,8 @@ Once sorted with the issue in Django so the keys were correct, we then reset the
          
 #### Media
 Some of The photos and credits obtained and used in this site were obtained from *Spectator Shop ...*
-e.g. media - https://shop.spectator.co.uk ; https://Kaggle.com 
-Other media images via my monthly subcription to ADOBE STOCK - https://stock.adobe.com/
+e.g. media - [Spectator Shop](https://shop.spectator.co.uk ; https://Kaggle.com) 
+Other media images via my monthly subcription to [ADOBE STOCK](https://stock.adobe.com/)
 
 >#### ATTENTION PLEASE #### 
 ##### The story of the Late Bug ####
@@ -634,7 +634,7 @@ Other media images via my monthly subcription to ADOBE STOCK - https://stock.ado
 ## Acknowledgements
 I received inspiration for this project from:- 
 - ** Boutique-Ado**- Main attribute to Fullstack Project in Final Module by Chris Z.
-- "*The Spectator* - https://shop.spectator.co.uk/ 
+- "*The Spectator* -[Spectator Shop](https://shop.spectator.co.uk/) 
 -  The colour of my buttons are attributed to Spectator Shop - background-color: #d30037;
 -  Brian Machira - *CI Mentor*
 - Stephen from C.I. Tutor for trouble shooting databases
@@ -656,7 +656,7 @@ Each page was copied and modified to suit the purposes of my website,
      Putting it altogether (mini project Practical Python).
      And product information:
      Boutique Ado and Kagglec.com
-     And  `http://Spectator.co.uk` 
+     And  [Spectator.co.uk](http://Spectator.co.uk) 
      and colour red touches and buttons-colour-scheme: #d30037;  
 
 ### Further ACKNOWLEDGEMENTS and all  Credits go to *ckz8780 Chris Zielinski* who created the excellent *Boutique Ado Website*.
