@@ -27,11 +27,11 @@
 ###  LIVE DEMO CAN ALSO BE FOUND AT HEROKU: https://kuk-marketing.herokuapp.com
 
 > ### README is located inside the MOCKUPS FOLDER Further information and alternative view via LINK HERE
-> README.md https://1drv.ms/w/s!AgMQTPoqZgRAjBzcw6gYVD7gImdt?e=5XbCvmgit 
+> [README.md](https://1drv.ms/w/s!AgMQTPoqZgRAjBzcw6gYVD7gImdt?e=5XbCvmgit)
 > Location of `Mockups Folder` is located directly under Media Folder directly located under Kuk_marketing app.
 > On gitpod and vscode platforms to reinstall projects:
 > 
-> *****pip3 install -r requirements.txt** **
+> *****pip3 install -r requirements.txt****
 
 >** 2023 - Latest UPDATE - WHERE AS i HAD A DATABASE AND COLLECTION OF PACKAGES; HEROKU DECIDED TO CHARGE FOR THE HOBBY POSTGRES DATABASE, i HAVE DEDICED TO CANCEL OUT MY PACKAGES FOR NOW UNTIL WHETHER OR NOT I DECIDE IT IS WORTH KEEPING THE DATABASE GOING ON A PAY MONTHLY BASIS.  ALTHOUGH ON ITS OWN THE BASIC PAID DATASE IS AFFORDABLE; IT IS WHEN YOU RUN SEVERAL OF THEM; YOU HAVE TO SUDDENLY DECIDE TO UPDATE YOUR PACKAGE PRICES SO YOU CAN INCORPORATE THEM INTO YOUR FUTURE PROJECTS.  i AM NOT A HAPPY BUNNY - A CASE OF PAY MORE FOR LESS IN MY OPINION! **
 
@@ -227,7 +227,7 @@ To revert to a previous commit - example below:
 * Under repository name, click  Settings.
 * Under "GitHub Pages", use Source drop-down menu and select a publishing source.
 * More information found on Github:
-  https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+ [github](https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 
 #### Cloning a repository to GitHub Desktop
 If I want to clone my Boutique Ado to deploy locally on GitHub desktop. 
@@ -239,9 +239,9 @@ on gitpod to continue to use and set up features on the repository:
 ###  Basic set up for my project and libraries
 *(see *CRUD functionality notes further down page*)
 
- * https://validator.w3.org/ *
+ * [validator.w3](https://validator.w3.org/) *
 
-  `https://getbootstrap.com/docs/4.4/getting-started/introduction/#starter-template`
+  [getBootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/#starter-template)
 
 ```
 1.  pip3 install django
@@ -360,7 +360,7 @@ $ git push heroku master
 >(1) Static data items:
 >Those data items whose extents lasts as long as the program execution time; such data items have manifest constant Lvalues. Every static data item must have been declared either in a function or routine definition, in a global declaration or as a label set by colon.
 >— The BCPL Reference Manual, 7.2 Space Allocation and Extent of Data Items
->     https://en.wikipedia.org/
+>     [wikipedia](https://en.wikipedia.org/)
 
 
 **Passing Data from View to Template**  A very useful feature of using frameworks to actually set data on the server side and get it coming through to the client.
@@ -537,7 +537,7 @@ The project uses JQuery to simplify DOM manipulation.
 Java script for forms and validation. 
 
 ### Testing - see bugs and fixes below
-* https://validator.w3.org/nu/#l118c6 - There is further testing wihich needs addressing. 
+* [validator.w3](https://validator.w3.org/nu/#l118c6) - There is further testing wihich needs addressing. 
 127.0.0.1 - - [20/Mar/2020 12:05:52] "GET /get_categories HTTP/1.1" 500 -
 Encountered:
 * 505 error indicates a temporary problem, and sometimes that problem is very temporary. A site might be getting overwhelmed with traffic, for example. So, refreshing the page is always worth a shot. Most browsers use the F5 key to refresh, and also provide a Refresh button somewhere on the address bar. It doesn’t fix the problem very often, but it takes just a second to try.
