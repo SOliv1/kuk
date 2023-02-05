@@ -1,1 +1,56 @@
-[{"pk":1,"model":"products.category","fields":{"name":"brands","friendly_name":"Brands"}},{"pk":2,"model":"products.category","fields":{"name":"graphic_design","friendly_name":"Graphic Designs"}},{"pk":3,"model":"products.category","fields":{"name":"our_packages","friendly_name":"Our Packages"}},{"pk":4,"model":"products.category","fields":{"name":"web-development","friendly_name":"Web Development"}},{"pk":5,"model":"products.category","fields":{"name":"web-design","friendly_name":"Web Design"}},{"pk":6,"model":"products.category","fields":{"name":"digital_marketing","friendly_name":"Digital Marketing"}},{"pk":7,"model":"products.category","fields":{"name":"our_services","friendly_name":"Our Services"}}]
+[{
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+        "description": "Adelaide",
+        "image": "media/2019-09-03 12.49.59.jpg",
+        "image_url": "https://kuk-marketing.s3.eu-west-2.amazonaws.com/media/onepage-wonder-cropped.jpeg",
+        "name": "Web Development",
+        "price": 48.99,
+        "rating": 3
+    }
+}, {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+        "description": "Adelaide ",
+        "image": "media/2019-09-03 12.50.47.jpg",
+        "image_url": "https://kuk-marketing.s3.eu-west-2.amazonaws.com/media/onepage-wonder-cropped.jpeg",
+        "name": "Web Design",
+        "price": 48.99,
+        "rating": 3
+    }
+}, {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+        "description": "",
+        "image": "",
+        "image_url": "",
+        "name": "Our Packages",
+        "price": 48.99,
+        "rating": 5
+    }
+}, {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+        "description": "hello",
+        "image": "",
+        "image_url": "",
+        "name": "Digital Marketing",
+        "price": 0,
+        "rating": 5
+    }
+}, {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+        "description": "t",
+        "image": "",
+        "image_url": "",
+        "name": "Brands",
+        "price": 0,
+        "rating": 5
+    }
+}]
