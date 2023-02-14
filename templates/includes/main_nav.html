@@ -43,13 +43,22 @@
                 <a class="dropdown-item" href="{% url 'digital_marketing' %}">Digital Marketing</a>
             </div>
         </li>
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="services-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="services-link">
+                <a class="dropdown-item" href="{% url 'about' %}">About Us</a>
+            </div>
+        </li>
     </ul>
 </div>
 
-<div class="collapse navbar-collapse" id="below-main-nav">
+<!--<div class="collapse navbar-collapse" id="below-main-nav">
     <ul class="navbar-nav w-auto mx-auto">   
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'about' %}" id="services-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 About Us
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="services-link">
@@ -57,4 +66,4 @@
             </div>
         </li>
     </ul>
-</div>
+</div> -->
