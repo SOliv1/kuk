@@ -64,6 +64,9 @@ INSTALLED_APPS = [
 
 ]
 
+# SecurityMiddleware must be listed before other middleware
+   
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -73,9 +76,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
-    # SecurityMiddleware must be listed before other middleware
-    'django.middleware.security.SecurityMiddleware',
-    # ...
 ]
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
