@@ -67,6 +67,8 @@ body {
 .btn-outline-black:focus {
     background: rgb(211 174 115);
     color: #fff !important;
+    transition-property:     background-color;
+  transition-duration: 2s 
 }
 
 .shine-now-button:hover,
