@@ -57,7 +57,7 @@ body {
 }
 
 .btn-outline-black {
-    background: white;
+    background: rgb(211 174 115);
     color: black !important;  /* use important to override link colors for <a> elements */
     border: 1px solid black;
 }
@@ -67,7 +67,8 @@ body {
 .btn-outline-black:focus {
     background: rgb(211 174 115);
     color: #fff !important;
-    transition-property:     background-color;
+    transition-property: 
+    background-color;
   transition-duration: 2s 
 }
 
