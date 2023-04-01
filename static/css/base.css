@@ -69,7 +69,7 @@ body {
     color: #fff !important;
     transition-property: 
     background-color;
-  transition-duration: 2s 
+  transition-duration: 750ms; 
 }
 
 .shine-now-button:hover,
