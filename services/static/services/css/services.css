@@ -66,6 +66,11 @@
 }
 
 
+divider--orange {
+    background-color: #f05f40;
+}
+
+
 /* Buttons */
 
 .btn--cta {
@@ -117,6 +122,13 @@ background-color: transparent;
 
 .block-divider--bg-black {
     color: #000;
+}
+
+hr .block-divider {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgb(255 193 7 / 61%);
 }
 
 

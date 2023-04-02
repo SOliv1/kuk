@@ -436,3 +436,13 @@ input[name='q']::placeholder {
     border-color:rgb(204, 0, 0);
     color: white;
 }
+
+
+/* Block Divider */
+
+hr .block-divider {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgb(255 193 7 / 61%);
+}
