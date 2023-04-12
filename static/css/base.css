@@ -24,6 +24,10 @@ body {
     backdrop-filter: blur(10px);
 }
 
+.card-img bg-transparent {
+background-image: rgb(133, 122, 50%);
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
